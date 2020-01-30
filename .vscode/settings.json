@@ -1,0 +1,13 @@
+{
+    "[javascript": {
+        "editor.codeActionsOnSave":{
+            "source;fixAll.eslint": true
+        }
+    },
+    
+    "[javascriptreact": {
+        "editor.codeActionsOnSave":{
+            "source;fixAll.eslint": true
+        }
+    },
+}
