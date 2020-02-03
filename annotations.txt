@@ -1,0 +1,36 @@
+Iniciando backend do GoBarber
+    Comandos
+
+    1 - Configurando estrutura
+            yarn init -y //criar a estrutura do node
+            yarn add express //instalar o express
+
+    2 - Nodemon e Sucrase
+            yarn add sucrase //traduzir código JS
+            yarn add nodemon //monitor de script para desenvolvimento
+
+    3 - Configurando Docker
+        docker -v //versão do Docker, depois q o docker tiver instalado
+        docker help //ajuda od Docker
+        docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres //criar uma instância do postgres no Docker
+        docker ps //lista todos os containers em execução
+        docker ps -a //lista todos os containers, mesmo que não estejam rodando
+        docker start database //iniciar database
+        docker logs database //log de todo o database
+
+    4 - ESLint, Prettier & EditorConfig
+        yarn add eslint -D //verifica se o código está seguindo os padrões
+        yarn eslint --init //inica o arquivo de configuração do eslint
+        yarn add prettier eslint-config-prettier eslint-plugin-prettier -D //plugon para deixar o codigo mais bonito
+        yarn slint --fix src --ext .js //corrigir todos os erros de sintaxe dos arquivos com extensão js
+
+     5 - Configurando Sequelize
+        yarn add sequelize //intala a dependência do sequelize
+        yarn add sequelize-cli -D //interface de linha de comando do sequelize
+        yarn add pg pg-hstore //dependências do postgres
+
+    6 - Gerando Hash da senha
+        yarn add bcryptjs //Módulo que gera hash para senha
+        yarn add jsonwebtoken //Gerador de JWT (Json Web Token)
+        yarn add yup //Biblioteca de validação de dados
+
