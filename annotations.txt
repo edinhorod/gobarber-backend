@@ -34,3 +34,6 @@ Iniciando backend do GoBarber
         yarn add jsonwebtoken //Gerador de JWT (Json Web Token)
         yarn add yup //Biblioteca de validação de dados
 
+    7 - Avatar do usuário
+      yarn add multer //PAra upload de arquivos (multpart form data)
+
