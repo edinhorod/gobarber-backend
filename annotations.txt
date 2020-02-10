@@ -37,3 +37,7 @@ Iniciando backend do GoBarber
     7 - Avatar do usuário
       yarn add multer //PAra upload de arquivos (multpart form data)
 
+    8 - Criando tabela pra salvar avatar do usuário
+      yarn sequelize migration:create --name=create-files//Criando migrations Files
+      yarn sequelize migration:create --name=add-avatar-field-to-users//Migaration para adicinar campo avatar na tabela de users e fazer relacionamento
+
