@@ -41,3 +41,6 @@ Iniciando backend do GoBarber
       yarn sequelize migration:create --name=create-files//Criando migrations Files
       yarn sequelize migration:create --name=add-avatar-field-to-users//Migaration para adicinar campo avatar na tabela de users e fazer relacionamento
 
+    9 - Migration de agendamento
+      yarn sequelize migration:create --name=create-appointments
+
