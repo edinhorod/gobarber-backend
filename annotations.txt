@@ -44,6 +44,9 @@ Iniciando backend do GoBarber
     9 - Migration de agendamento
       yarn sequelize migration:create --name=create-appointments
 
-    10 - Validações de agendamento 
+    10 - Validações de agendamento
       yarn add date-fns@next//Biblioteca para lidar com datas no Sequelize
+
+    11 - Configurando MongoDB
+      yarn add mongoose//
 
