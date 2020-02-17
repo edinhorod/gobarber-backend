@@ -89,13 +89,21 @@ class AppointmentController {
     Checar se provider já tem horário marcado
     */
 
+    /* Provider não pode marcar um horário para ele mesmo */
+    if (req.userId === req.body.provider_id) {
+      return res
+        .status(400)
+        .json({ error: 'Provider can not make a appointment for himself' });
+    }
+    /* Provider não pode marcar um horário para ele mesmo */
+
     const appointment = await Appointment.create({
       user_id: req.userId,
       provider_id,
       date: hourStart,
     });
 
-    // Notificar prestador de serviço
+    /* Notificar prestador de serviço */
     const user = await User.findByPk(req.userId);
     const formattedDate = format(
       hourStart,
@@ -108,7 +116,7 @@ class AppointmentController {
       content: `Novo agendamento de ${user.name} para o ${formattedDate}`,
       user: provider_id,
     });
-    // Notificar prestador de serviço
+    /* Notificar prestador de serviço */
     return res.json(appointment);
   }
 }
