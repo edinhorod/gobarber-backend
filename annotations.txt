@@ -50,3 +50,6 @@ Iniciando backend do GoBarber
     11 - Configurando MongoDB
       yarn add mongoose//
 
+    12 - Configurando Nodemailer
+      yarn add nodemailer//Instalar biblioteca nodemailer
+
