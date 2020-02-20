@@ -58,4 +58,8 @@ Iniciando backend do GoBarber
       yarn add express-handlebars //Integração do handlebars com express
       yarn add nodemailer-express-handlebars //Integração do nodemailer com o express-handlebars
 
+    14 - Configurando fila com Redis
+      docker run --name redisbarber -p 6379:6379 -d -t redis:alpine //Baixar a maquina do Redis
+      yarn add bee-queue //Controlador de filas no Node
+
 
