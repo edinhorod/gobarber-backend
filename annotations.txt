@@ -21,8 +21,8 @@ Iniciando backend do GoBarber
     4 - ESLint, Prettier & EditorConfig
         yarn add eslint -D //verifica se o código está seguindo os padrões
         yarn eslint --init //inica o arquivo de configuração do eslint
-        yarn add prettier eslint-config-prettier eslint-plugin-prettier -D //plugon para deixar o codigo mais bonito
-        yarn slint --fix src --ext .js //corrigir todos os erros de sintaxe dos arquivos com extensão js
+        yarn add prettier eslint-config-prettier eslint-plugin-prettier -D //plugin para deixar o codigo mais bonito
+        yarn eslint --fix src --ext .js //corrigir todos os erros de sintaxe dos arquivos com extensão js
 
      5 - Configurando Sequelize
         yarn add sequelize //intala a dependência do sequelize
@@ -35,7 +35,7 @@ Iniciando backend do GoBarber
         yarn add yup //Biblioteca de validação de dados
 
     7 - Avatar do usuário
-      yarn add multer //PAra upload de arquivos (multpart form data)
+      yarn add multer //Para upload de arquivos (multpart form data)
 
     8 - Criando tabela pra salvar avatar do usuário
       yarn sequelize migration:create --name=create-files//Criando migrations Files
