@@ -67,4 +67,7 @@ Iniciando backend do GoBarber
       yarn add express-async-errors//Sequelize tratar erros com async/await
       yarn add youch//Trata as mensagens de erro
 
+    16 - Variáveis ambiente
+      yarn add dotenv//Para carregar as variaveis de ambiente na aplicação
+
 
