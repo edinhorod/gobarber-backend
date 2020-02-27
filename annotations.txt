@@ -62,4 +62,9 @@ Iniciando backend do GoBarber
       docker run --name redisbarber -p 6379:6379 -d -t redis:alpine //Baixar a maquina do Redis
       yarn add bee-queue //Controlador de filas no Node
 
+    15 - Tratamento de exceções
+      yarn add @sentry/node@5.12.4//Instalar o sentry
+      yarn add express-async-errors//Sequelize tratar erros com async/await
+      yarn add youch//Trata as mensagens de erro
+
 
