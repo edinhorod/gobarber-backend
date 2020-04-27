@@ -43,12 +43,14 @@ Iniciando backend do GoBarber
 
     9 - Migration de agendamento
       yarn sequelize migration:create --name=create-appointments
+      yarn sequelize db:migrate //Rodar migrations
 
     10 - Validações de agendamento
       yarn add date-fns@next//Biblioteca para lidar com datas no Sequelize
 
     11 - Configurando MongoDB
       yarn add mongoose//
+      docker run --name mongobarber -p 27017:27017 -d -t mongo //Criar imagem do mongo no docker
 
     12 - Configurando Nodemailer
       yarn add nodemailer//Instalar biblioteca nodemailer
